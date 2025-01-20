@@ -21,7 +21,7 @@ const Weather = () => {
     setLoading(true);
     axios
       .get(
-        `http://api.weatherapi.com/v1/forecast.json?key=e8b81227058143b1b5d175518242312&q=${country}&days=7&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=e8b81227058143b1b5d175518242312&q=${country}&days=7&aqi=no&alerts=no`
       )
       .then((response) => {
         const data = response.data;
